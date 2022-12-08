@@ -1,0 +1,43 @@
+*{
+    padding:0;
+    margin: 0;
+}
+#jogo{
+    width:400px;
+    height:500px;
+    border: 1px solid black;
+    margin:auto;
+    overflow:hidden;
+    background-color: lightblue;
+    background-size: cover;
+}
+#bloco{
+    width: 50px;
+    height: 500px;
+    background-color: green;
+    position: relative;
+    left:400px;
+    animation: bloco 2s infinite linear;
+}
+@keyframes bloco{
+    0%{left:400px}
+    100%{left:-50px}
+}
+#buraco{
+    width: 50px;
+    height:150px;
+    background-color: lightblue;
+    position:relative;
+    left:400px;
+    top: -500px;
+    animation: bloco 2s infinite linear;
+}
+#personagem{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top:100px;
+    background-color: yellow;
+    background-size: auto;
+    position:absolute;
+}
